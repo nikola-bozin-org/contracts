@@ -2,7 +2,7 @@
 pragma solidity >0.8.0;
 
 contract IDGenerator{
-    uint256 public id_nonce;
+    uint256 private id_nonce;
     constructor(){
         id_nonce =0;
     }

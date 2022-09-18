@@ -5,7 +5,7 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 contract ETH_Price{
 
-    AggregatorV3Interface aV3i;
+    AggregatorV3Interface immutable aV3i;
 
     constructor(address aV3i_Address){
         aV3i = AggregatorV3Interface(aV3i_Address);
